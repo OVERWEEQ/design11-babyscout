@@ -1,0 +1,8 @@
+$fonts: (
+    ('FjallaOne-Regular.woff', 400, normal, 'woff'),
+    ('FjallaOne-Regular.woff2', 400, normal, 'woff2'),
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('Fjalla One', '/fonts/fjallaone/#{$url}', $weight, $style, $format);
+}

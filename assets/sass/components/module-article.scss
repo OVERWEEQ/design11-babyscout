@@ -1,0 +1,35 @@
+.design10 {
+    .module-article {
+        padding: 33px 0 20px 0;
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 96%;
+            letter-spacing: -0.01em;
+            text-align: center;
+            color: #363636;
+            margin-bottom: 26px;
+            @include media('sm') {
+                font-size: 35px;
+            }
+            &_left {
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+        &_small {
+            padding: 24px 0 21px 0;
+        }
+        .social-links {
+            margin-bottom: 33px;
+        }
+        &__image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

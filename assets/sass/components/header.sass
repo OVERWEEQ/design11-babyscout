@@ -1,0 +1,68 @@
+.design10
+  .header
+    height: 90px
+    @include media('xsm')
+      height: 49px
+    &__top
+      padding-bottom: 12px
+      gap: 20px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .social-links
+        margin-bottom: 0
+        padding: 2px 2px 0 0
+        .links
+          gap: 14px
+    &__logo-inner
+      display: flex
+      justify-content: center
+      align-items: center
+    &__logo-img
+      width: 148px
+      height: 37px
+      margin-left: 1px
+    &__fa-menu
+      height: 15px
+      padding: 0
+      border: none
+      background-color: transparent
+      justify-content: space-between
+      display: none
+      margin-right: 5px
+      @include media('xsm')
+        display: flex
+        flex-direction: column
+      &-line
+        background-color: #CCCCCC
+        height: 3px
+        width: 18px
+    &__nav
+      padding: 4px 0px 5px 1px
+      border-top: 1px solid  #d9d9d9
+      border-bottom: 1px solid  #d9d9d9
+      @include media('xsm')
+        display: none
+    &__list
+      list-style-type: none
+      display: flex
+      gap: 25px
+      @include media('xmd')
+          gap: 18px
+      @include media('xsm')
+          flex-wrap: wrap
+          column-gap: 18px
+          row-gap: 5px
+      &-link
+        font-family: var(--font-family)
+        font-weight: 400
+        font-size: 19px
+        line-height: 158%
+        color: #787878
+        transition: .3s all
+        &:hover 
+          color: #ab6eea
+        @include media('xmd')
+          font-size: 15px
+      &-link.active
+        color: #ab6eea

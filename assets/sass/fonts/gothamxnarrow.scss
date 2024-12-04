@@ -1,0 +1,7 @@
+$fonts: (
+  ('gothamxnarrow_bold.otf', 700)
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('Gotham XNarrow', '/fonts/gothamxnarrow/#{$url}', $weight, $style, $format);
+}

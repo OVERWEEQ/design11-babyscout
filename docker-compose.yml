@@ -1,0 +1,17 @@
+version: '2.4'
+networks:
+   design8_network:
+      driver: bridge
+services:
+   design8:
+      container_name: design8
+      build:
+         context: ./
+         dockerfile: Dockerfile
+      ports:
+         - '3004:5173'
+      volumes:
+         - ./:/app
+      tty: true
+      networks:
+         - design8_network

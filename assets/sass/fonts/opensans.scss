@@ -1,0 +1,8 @@
+$fonts: (
+  ('OpenSans-Regular.woff', 400, normal, 'woff'),
+  ('OpenSans-Regular.woff2',400, normal, 'woff2'),
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('OpenSans', '/fonts/opensans/#{$url}', $weight, $style, $format);
+}

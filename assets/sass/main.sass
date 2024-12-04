@@ -1,0 +1,90 @@
+// mixins
+@import 'media'
+@import 'vendors/_font-face'
+// fonts
+@import 'fonts/gothamxnarrow'
+@import 'fonts/fjallaone'
+@import 'fonts/slatepro'
+@import 'fonts/opensans-condensed'
+@import 'fonts/crimson-text'
+@import 'fonts/opensans'
+// others
+@import 'variables'
+
+
+// shared components
+@import 'components/button'
+@import 'components/popular-names'
+@import 'components/social-links'
+@import 'components/module-title'
+
+// sections
+@import 'components/header'
+@import 'components/module-banner'
+@import 'components/module-home'
+@import 'components/module-number'
+@import 'components/module-general'
+@import 'components/single-image'
+@import 'components/module-breadcrumbs'
+@import 'components/module-ads'
+@import 'components/module-article'
+@import 'components/module-accordion'
+@import 'components/module-text'
+@import 'components/module-grid'
+
+
+.design10
+  overflow-x: hidden
+  .main-structure
+    background-color: var(--bg-color)
+    padding-bottom: 20px
+    &__column_center
+      max-width: calc(var(--main-width) + var(--gap-main) * 2)
+      margin: 0 auto
+    
+  .outer-gap-elem
+    padding: var(--gap-main)
+    @include media('md')
+      padding: var(--gap-main-mobile)
+    &_header
+      padding-bottom: 0
+      padding-top: 11px
+    &_banner
+      padding-top: 0
+      padding-bottom: 0
+    &_hero
+      padding-top: 13px
+      padding-bottom: 0
+    &_numbers
+      padding-top: 32px
+      padding-bottom: 0
+    &_general1
+      padding-top: 30px
+      padding-bottom: 43px
+    &_general2
+      padding-top: 35px
+      padding-bottom: 36px
+    &_general3
+      padding-top: 0
+      padding-bottom: 36px
+    &_breadcrumbs
+      padding-top: 7px
+      padding-bottom: 5px
+
+  .small-block
+    max-width: 700px
+    width: 100%
+    margin: 0 auto
+
+  .gray-block
+    background: #f5f5f5
+
+  .ads-wrapper
+    display: grid
+    grid-template-columns: minmax(500px, 656px) minmax(200px, 300px)
+    gap: 36px
+    padding-left: 16px
+    @include media('md')
+      display: flex
+      flex-direction: column-reverse
+      padding-right: 16px

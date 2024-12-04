@@ -1,0 +1,15 @@
+.design10 {
+    .module-text {
+        padding: 12px 0 23px 0;
+        &__text {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #626262;
+            &:not(:last-of-type) {
+                margin-bottom: 23px;
+            }
+        }
+    }
+}

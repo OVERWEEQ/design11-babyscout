@@ -1,0 +1,8 @@
+$fonts: (
+  ('CrimsonText-Regular.woff', 400, normal, 'woff'),
+  ('CrimsonText-Regular.woff2', 400, normal, 'woff2'),
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('Crimson Text', '/fonts/crimson-text/#{$url}', $weight, $style, $format);
+}

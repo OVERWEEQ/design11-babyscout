@@ -1,0 +1,12 @@
+$fonts: (
+  ('SlatePro-Bk.woff', 350, normal, 'woff'),
+  ('SlatePro-Bk.woff2', 350, normal, 'woff2'),
+  ('SlatePro-Light.woff', 300, normal, 'woff'),
+  ('SlatePro-Light.woff2', 300, normal, 'woff2'),
+  ('SlatePro-Medium.woff', 500, normal, 'woff'),
+  ('SlatePro-Medium.woff2', 500, normal, 'woff2'),
+);
+
+@each $url, $weight, $style, $format in $fonts {
+  @include font('Slate Pro', '/fonts/slatepro/#{$url}', $weight, $style, $format);
+}

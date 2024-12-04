@@ -1,0 +1,65 @@
+.design10
+  .module-general
+    &__title
+      position: relative
+      font-family: var(--font-family)
+      font-weight: 600
+      font-size: 34px
+      line-height: 147%
+      color: #626262
+      margin-bottom: 44px
+      margin-left: -4px
+      &::after
+        content: ''
+        display: block
+        left: 3px
+        top: 100%
+        position: absolute
+        background: #a67bd2
+        width: 120px
+        height: 8px
+    &__info
+      display: flex
+      gap: 16px
+      margin-bottom: 19px
+      @include media('xs')
+        flex-direction: column
+      &-image
+        display: flex
+        width: 150px
+        flex-shrink: 0
+        aspect-ratio: 1/1
+        @include media('xs')
+          width: 100%
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      &-wrapper
+        display: flex
+        flex-direction: column
+      &-time
+        font-family: var(--font-family)
+        font-weight: 400
+        font-size: 16px
+        color: #adadad
+        display: flex
+        margin-bottom: 8px
+        margin-top: 4px
+      &-title
+        font-family: var(--font-family)
+        font-weight: 600
+        font-size: 24px
+        color: #6c6c6c
+      &-description
+        font-family: var(--font-family)
+        font-weight: 400
+        font-size: 20px
+        line-height: 27px
+        color: #626262
+        margin-top: 2px
+        @include media('sm')
+          br
+            display: none
+    &__button
+      margin-top: 22px

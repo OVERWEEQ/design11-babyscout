@@ -1,0 +1,70 @@
+.design10 {
+    .popular-names {
+        display: flex;
+        flex-direction: column;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        &__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            border-bottom: 1px solid #c7c7c7;
+            &-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 13px;
+                width: 100%;
+                padding: 13px 0 19px 0;
+                @include media('sm') {
+                    gap: 10px;
+                }
+            }
+            &-name {
+                display: flex;
+                align-items: flex-end;
+                gap: 8px;
+                .count {
+                    font-family: var(--four-family);
+                    font-weight: 350;
+                    font-size: 12px;
+                    color: #7c7c7c;
+                    display: inline-block;
+                    padding-bottom: 3px;
+                }
+                .name {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: #626262;
+                }
+            }
+            &-heart {
+                display: flex;
+                flex-shrink: 0;
+            }
+            @include media('sm') {
+                padding: 18px 0;
+            }
+        }
+        &__more {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 16px 14px 20px;
+            font-family: var(--four-family);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 133%;
+            letter-spacing: 0.2em;
+            color: #333;
+            min-height: 56px;
+            box-sizing: border-box;
+        }
+    }
+}
