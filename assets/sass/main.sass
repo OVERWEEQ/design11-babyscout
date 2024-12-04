@@ -2,12 +2,9 @@
 @import 'media'
 @import 'vendors/_font-face'
 // fonts
-@import 'fonts/gothamxnarrow'
 @import 'fonts/fjallaone'
 @import 'fonts/slatepro'
 @import 'fonts/opensans-condensed'
-@import 'fonts/crimson-text'
-@import 'fonts/opensans'
 // others
 @import 'variables'
 
@@ -62,13 +59,13 @@
       padding-top: 30px
       padding-bottom: 43px
     &_general2
-      padding-top: 35px
+      padding-top: 33px
       padding-bottom: 36px
     &_general3
       padding-top: 0
       padding-bottom: 36px
     &_breadcrumbs
-      padding-top: 7px
+      padding-top: 1px
       padding-bottom: 5px
 
   .small-block
@@ -88,3 +85,12 @@
       display: flex
       flex-direction: column-reverse
       padding-right: 16px
+
+#home
+  .module-number__list-wrapper
+    flex-wrap: nowrap
+  .module-number__list-arrow-wrapper
+    width: 0
+    margin-top: 8px
+    @include media('xmd')
+      width: 100%

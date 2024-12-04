@@ -2,6 +2,9 @@
     .popular-names {
         display: flex;
         flex-direction: column;
+        &__arrow {
+            margin-top: 7px;
+        }
         &__wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -11,7 +14,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 10px;
+            gap: 12px;
             border-bottom: 1px solid #c7c7c7;
             &-wrap {
                 display: flex;
@@ -46,9 +49,10 @@
             &-heart {
                 display: flex;
                 flex-shrink: 0;
+                margin-top: -2px;
             }
             @include media('sm') {
-                padding: 18px 0;
+                padding: 5px 0;
             }
         }
         &__more {
